@@ -11,12 +11,18 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Toast mAppToast;
+
     public void makeToast(String appName) {
+        if(mAppToast != null){
+            mAppToast.cancel();
+        }
+
         Context context = getApplicationContext();
         CharSequence text = "This button will launch " + appName;
         int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        mAppToast = Toast.makeText(context, text, duration);
+        mAppToast.show();
     }
 
     @Override

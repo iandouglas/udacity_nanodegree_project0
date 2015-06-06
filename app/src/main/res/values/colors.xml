@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="orange" type="color">#FFF08C35</item>
+    <item name="white" type="color">#FFFFFFFF</item>
+    <item name="capstone_pink" type="color">#FFF0426F</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/white</item>
+        <item>@color/orange</item>
+        <item>@color/capstone_pink</item>
+    </integer-array>
+
+</resources>
